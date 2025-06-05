@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Baloo2';
+  src: url('./FONTES/baloo-2/Baloo2-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+*{
+      overflow-x: hidden;
+      margin: 0;
+      font-family: 'Baloo2', sans-serif;
+}
+
+.convitestopo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 2vh;
+    width: 100%;
+    height: 5vh;
+    background: linear-gradient(to right, #005288 40%, #005288 65%, #0070AB 69%, #0096D6 72%, #71619E 77%, #51AD32 81%, #FFC20E 88%, #D44040 100%);
+    gap: 3vw;
+}
+.txt-sarau1 {
+    color: #fff;
+    background-color: #0096D6;
+    padding: 7px 25px 7px 25px;
+    border-radius: 20px;
+    font-size: clamp(12px, 20px, 30px);
+    margin-left: 5%;
+}
+
+.txt-sarau2{
+    color: #fff;
+    font-size: clamp(16px, 20px, 30px);
+}
+.element-sarau{
+    width: 32px;
+    height: 32px;
+    margin-left: -3.5vw;
+    margin-bottom: 1vw;
+}
+
+.Logo-sarau{
+    width: 139px;
+    height: 57px;
+    justify-content: right;
+  margin-left: auto;
+    margin-right: 5%;
+}
+
+@media (max-width: 1200px){
+
+    .Logo-sarau{
+    width: 119px;
+    height: 47px;
+   
+}
+.txt-sarau1, .txt-sarau2{
+    font-size: 15px;
+}
+
+.element-sarau{
+    width: 22px;
+    height: 22px;
+}
+
+}
+
+/* fim do header de noticia :) */
+
+
+
+
