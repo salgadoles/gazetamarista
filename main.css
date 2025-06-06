@@ -10,6 +10,7 @@
       overflow-x: hidden;
       margin: 0;
       font-family: 'Baloo2', sans-serif;
+      
 }
 
 .convitestopo{
@@ -70,6 +71,33 @@
 
 /* fim do header de noticia :) */
 
+.banner{
+    padding: 2.5%;
+    width: 100vw;
+    height: 80vh;
+    background-color: #000000;
+     display: flex;
+    justify-content: left;
+}
 
+.logo-gazeta {
+    width: 160px;
+    height: 60px;
 
+}
+
+@media (max-width: 1300px){
+    .logo-gazeta {
+    width: 140px;
+    height: 5   0px;
+
+}
+}
+
+/* fim do banner ;p */
+
+   body{
+    
+    background-color: #005288;
+   } 
 
