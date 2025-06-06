@@ -1,19 +1,29 @@
-@font-face {
-  font-family: 'Baloo2';
-  src: url('./FONTES/baloo-2/Baloo2-ExtraBold.woff') format('woff');
-  font-weight: bold;
+    @font-face {
+    font-family: 'Baloo2';
+    src: url('./FONTES/baloo-2/Baloo2-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+  @font-face {
+  font-family: 'Source Sans Pro';
+  src: url('FONTES/sourcesanspro/AnyConv.com__SourceSansPro-Light.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 
-*{
+
+
+    *{
       overflow-x: hidden;
       margin: 0;
       font-family: 'Baloo2', sans-serif;
       
 }
 
-.convitestopo{
+    .convitestopo{
     display: flex;
     align-items: center;
     justify-content: left;
@@ -23,7 +33,7 @@
     background: linear-gradient(to right, #005288 40%, #005288 65%, #0070AB 69%, #0096D6 72%, #71619E 77%, #51AD32 81%, #FFC20E 88%, #D44040 100%);
     gap: 3vw;
 }
-.txt-sarau1 {
+    .txt-sarau1 {
     color: #fff;
     background-color: #0096D6;
     padding: 7px 25px 7px 25px;
@@ -32,18 +42,18 @@
     margin-left: 5%;
 }
 
-.txt-sarau2{
+    .txt-sarau2{
     color: #fff;
     font-size: clamp(16px, 20px, 30px);
 }
-.element-sarau{
+    .element-sarau{
     width: 32px;
     height: 32px;
     margin-left: -3.5vw;
     margin-bottom: 1vw;
 }
 
-.Logo-sarau{
+    .Logo-sarau{
     width: 139px;
     height: 57px;
     justify-content: right;
@@ -51,18 +61,18 @@
     margin-right: 5%;
 }
 
-@media (max-width: 1200px){
+    @media (max-width: 1200px){
 
     .Logo-sarau{
     width: 119px;
     height: 47px;
    
 }
-.txt-sarau1, .txt-sarau2{
+    .txt-sarau1, .txt-sarau2{
     font-size: 15px;
 }
 
-.element-sarau{
+    .element-sarau{
     width: 22px;
     height: 22px;
 }
@@ -71,7 +81,7 @@
 
 /* fim do header de noticia :) */
 
-.banner{
+    .banner{
     padding: 2.5%;
     width: 100vw;
     height: 80vh;
@@ -80,24 +90,100 @@
     justify-content: left;
 }
 
-.logo-gazeta {
+    .logo-gazeta {
     width: 160px;
     height: 60px;
 
 }
 
-@media (max-width: 1300px){
+    @media (max-width: 1300px){
     .logo-gazeta {
     width: 140px;
     height: 5   0px;
 
 }
-}
+    }
 
 /* fim do banner ;p */
 
    body{
-    
-    background-color: #005288;
+    background-color:#005288; 
    } 
 
+   main{
+   
+   }
+
+   .dobra-1 {
+  background:
+    url('Group 122.png'),
+    linear-gradient(to bottom, #043352 2.5%, #005288 100%);   
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  height: 80vh;
+  object-fit: contain;
+  z-index: 1;
+}
+
+
+   .dobra-1-topo {
+  padding: 0 2% 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -9;
+}
+
+
+   .logo-conexao{
+    margin: 4%;
+    width: 350px;
+    height: 175px;
+
+    }
+
+    .txt-dobra-1{
+    display: flex;
+    width: 100vw; 
+    color: #fff;
+    }
+
+     .tittle-dobra-1-esquerda, .tittle-dobra-1-direita{
+    flex: 1;
+     padding: 2% 10% 0% 10%;
+    }
+
+   .tittle-dobra-1-esquerda h2{
+
+font-size: 50px;
+
+   }
+    .tittle-dobra-1-direita h2{
+font-size: 50px;
+    }
+
+    
+.linha2-dobra1{
+    display: flex;
+    margin-bottom: 1;
+}
+
+.txt-dobra-1-esquerda, .txt-dobra-1-direita{
+    font-size: 16px;
+    color: #fff;
+    flex: 1;
+     padding: 0% 5% 0% 10%;
+    }
+
+
+   .txt-dobra-1-esquerda h2{
+
+font-size: 20px;
+
+   }
+    .txt-dobra-1-direita h2{
+font-size: 20px;
+    }
+
+    
