@@ -1,58 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Gazeta Marista</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cards.css">
+    <title>Animated Flex Cards</title>
 </head>
 <body>
- <header class="convitestopo">
-        <p class="txt-sarau1">Sarau literario Marista irmão Acacío</p>
-            <hr style="height: 1px; background-color: white; border: none; width: 20vw;">
-        <p class="txt-sarau2"><strong style="color: #FFC20E;">24/04</strong> apartir das <strong style="color: #FFC20E;">18h</strong> </p>
-        <img class="element-sarau" src="ELEMENTOS GRAFICOS/Group 91.png" alt="">
-        <img class="Logo-sarau" src="ELEMENTOS GRAFICOS/image-removebg-preview (7) 1.png" alt="">
-    </header>
-
-<section class="banner">
-    <img class="logo-gazeta" src="ELEMENTOS GRAFICOS/image-removebg-preview (1) 1 (1).png" alt="">
-</section>
-
-<main>
-    <section class="dobra-1">
-      <section class="dobra-1-topo">
-     
-        <img class="logo-conexao" src="ELEMENTOS GRAFICOS/image-removebg-preview (9) 1.png" alt="">
-    </section>
-
-          <section class="txt-dobra-1" >
-
-    <div class="tittle-dobra-1-esquerda">
-        <h2>RÁDIO</h2>
-</div>
-<div class="tittle-dobra-1-direita">
-     <h2>JORNAL</h2>
-</div>
-
-        </section>
-<section class="linha2-dobra1">
-
-
-    
-    <div class="txt-dobra-1-esquerda">
-        <p style="font-family: 'Source Sans Pro', sans-serif; " >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at justo nec augue finibus pulvinar. Curabitur euismod, nisl a suscipit placerat, nunc urna ultricies neque, sed convallis nisi nisi a nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
-</div>
-<div class="txt-dobra-1-direita">
-   <p style="font-family: 'Source Sans Pro', sans-serif; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at justo nec augue finibus pulvinar. Curabitur euismod, nisl a suscipit placerat, nunc urna ultricies neque, sed convallis nisi nisi a nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce lacinia, nisl in dapibus dictum, lectus dolor ultrices magna, vitae iaculis odio </p>
-</div>
-</section>
-</section>
-
-<div class="dobra-2">
-      <div class="wrapper">
+    <div class="wrapper">
         <div class="container" id="cardContainer">
             <input type="radio" name="slide" id="c1" checked>
             <label for="c1" class="card">
@@ -164,27 +119,18 @@
   <button id="nextBtn">▶</button>
 </div>
 
-</div>
-
-
-
-</main>
-
-<script>
+</body><script>
   const container = document.getElementById('cardContainer');
   const nextBtn = document.getElementById('nextBtn');
   const prevBtn = document.getElementById('prevBtn');
 
   nextBtn.addEventListener('click', () => {
-    container.scrollBy({ left: 320, behavior: 'smooth' }); 
+    container.scrollBy({ left: 320, behavior: 'smooth' }); // ajustável
   });
 
   prevBtn.addEventListener('click', () => {
-    container.scrollBy({ left: -320, behavior: 'smooth' });
+    container.scrollBy({ left: -320, behavior: 'smooth' }); // ajustável
   });
 </script>
-
-
-</body>
-
+    s
 </html>

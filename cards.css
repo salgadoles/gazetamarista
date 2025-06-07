@@ -1,0 +1,14 @@
+  @font-face {
+    font-family: 'Baloo2';
+    src: url('./FONTES/baloo-2/Baloo2-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}   
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+   font-family: 'Baloo2', sans-serif;
+
+}
+

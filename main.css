@@ -1,9 +1,9 @@
-    @font-face {
-    font-family: 'Baloo2';
-    src: url('./FONTES/baloo-2/Baloo2-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
+        @font-face {
+        font-family: 'Baloo2';
+        src: url('./FONTES/baloo-2/Baloo2-ExtraBold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
 
   @font-face {
   font-family: 'Source Sans Pro';
@@ -166,7 +166,7 @@ font-size: 50px;
     
 .linha2-dobra1{
     display: flex;
-    margin-bottom: 1;
+    margin-bottom: 1%;
 }
 
 .txt-dobra-1-esquerda, .txt-dobra-1-direita{
@@ -185,5 +185,183 @@ font-size: 20px;
     .txt-dobra-1-direita h2{
 font-size: 20px;
     }
-
     
+    
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: nowrap;
+     overflow-x: auto;  
+    justify-content: start;
+    scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;    
+}
+
+.card {
+    flex: 0 0 auto;
+    padding: 2%;
+    width: 300px;
+    border-radius: .75rem;
+      background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+   
+    display: flex;
+   align-items: self-start  ;
+   justify-content: right;
+   text-align: right;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+   
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.card > .row > .description {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FFC20E;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+     width: clamp(300px, 35vw, 600px);
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('Group\ 125.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #043352;
+}
+.card[for="c2"] {
+ background-image: url('Group\ 125.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #0c5585;
+}
+.card[for="c3"] {
+    background-image: url('Group\ 125.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #1573b2;
+}
+.card[for="c4"] {
+   background-image: url('Group\ 125.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #3097dc;
+}
+.card[for="c5"] {
+   background-image: url('Group\ 125.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #0d67a3;
+}                     
+.card[for="c6"] {
+   background-image: url('Group\ 125.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #1e9df3;
+}
+.card[for="c7"] {
+   background-image: url('Group\ 125.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #1a88d2;
+}
+.card[for="c8"] {
+   background-image: url('Group\ 125.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #115989;
+}
+.card[for="c9"] {
+   background-image: url('Group\ 125.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #094a76;
+}
+.card[for="c10"] {
+   background-image: url('Group\ 125.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #043555;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.carousel-controls button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #043352;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-controls button:hover {
+    background-color: #06517a;
+}
