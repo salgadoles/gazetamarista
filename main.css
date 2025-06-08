@@ -537,3 +537,43 @@ flex-wrap: wrap ;
 
 /* fim dobra 3 >;p */
 
+.dobra-4{   
+    margin: 5% 2% 5% 2%;
+   display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.dobra-4 img {
+    width: 765px;
+    height: 227px;
+}
+   
+
+
+.tittle-dobra-4{
+ text-align: center;
+        color: #fff;
+        font-size: clamp( 25px, 50px, 60px);
+}
+
+ .button-dobra-4 {
+    margin: 2%;
+    background-color: #00A0E0; 
+    color: white; 
+    font-weight: bold;
+    font-size: clamp(1.1rem, 1.6rem, 1.8rem);
+    border: none;
+    padding: 14px 40px;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 380px;
+  }
+
+  .button-dobra-4:hover {
+    background-color: #D44040; 
+  }
+
+  /* fim dobra 4 >;p */
