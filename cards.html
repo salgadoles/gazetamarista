@@ -1,145 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cards.css">
-    <title>Animated Flex Cards</title>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="container" id="cardContainer">
-            <input type="radio" name="slide" id="c1" checked>
-            <label for="c1" class="card">
-                <div class="row">
-              
-                    <div class="description">
-                        <h4>Marcus</h4>
-                        <p>redator da gazeta  marista</p>   
-                    </div>
-                </div>
-            </label>
-            <input type="radio" name="slide" id="c2" >
-            <label for="c2" class="card">
-                <div class="row">
-                   
-                    <div class="description">
-                        <h4>Carla ravenada </h4>
-                        <p>Redatora chefa da gazeta do maristas</p>
-                    </div>
-                </div>
-            </label>
-            <input type="radio" name="slide" id="c3" >
-            <label for="c3" class="card">
-                <div class="row">
-                  
-                    <div class="description">
-                        <h4>samuel  Lima</h4>
-                        <p>Programador da gazeta </p>
-                    </div>
-                </div>
-            </label>
-            <input type="radio" name="slide" id="c4" >
-            <label for="c4" class="card">
-                <div class="row">
-                
-                    <div class="description">
-                        <h4>lalalal</h4>
-                        <p>snasdjdaasdklmsadkdas</p>
-                    </div>
-                </div>
-            </label>
-              <input type="radio" name="slide" id="c5" >
-            <label for="c5" class="card">
-                <div class="row">
-                   
-                    <div class="description">
-                        <h4>asdklhdaskjhdssda</h4>
-                        <p>jjsadsakdkahdsa</p>
-                    </div>
-                </div>
-            </label>
-
-             <input type="radio" name="slide" id="c6" >
-            <label for="c6" class="card">
-                <div class="row">
-                   
-                    <div class="description">
-                        <h4>lalalalal</h4>
-                        <p>Sasklhxasljdalsjasdk</p>
-                    </div>
-                </div>
-            </label>
-
-             <input type="radio" name="slide" id="c7" >
-            <label for="c7" class="card">
-                <div class="row">
-                   
-                    <div class="description">
-                        <h4>elelelleel</h4>
-                        <p>Spacdshsdnsdkhdsdsn</p>
-                    </div>
-                </div>
-            </label>
-
-             <input type="radio" name="slide" id="c8" >
-            <label for="c8" class="card">
-                <div class="row">
-                    
-                    <div class="description">
-                        <h4>Nssususss</h4>
-                        <p>kjsdsndsjksddshfjsd</p>
-                    </div>
-                </div>
-            </label>
-
-             <input type="radio" name="slide" id="c9" >
-            <label for="c9" class="card">
-                <div class="row">
-                    <div class="icon">5</div>
-                    <div class="description">
-                        <h4>sdkjdsbjkdsnndjjcs</p>  
-                    </div>
-                </div>
-            </label>
-
-             <input type="radio" name="slide" id="c10" >
-            <label for="c10" class="card">
-                <div class="row">
-                    <div class="description">
-                        <h4>ratumanocu</h4>
-                        <p>sdkjbghghshscasnjksakjcasad</p>
-                    </div>
-                </div>
-            </label>
-        </div>
+<div class="post">
+  <div class="post-image">
+    <img src="Hallow - Faith 1.png" alt="Imagem do post" />
+    <a href="#" class="arrow-link">
+      <img src="seta.png" alt="Seta" />
+    </a>
+  </div>
+  <div class="post-content">
+    <div class="text-left">
+      <h2 class="title">fins e recomeços</h2>
+      <p class="subtitle">a morte do papa e o drama mundial.</p>
     </div>
-    <div class="carousel-controls">
-  <button id="prevBtn">◀</button>
-  <button id="nextBtn">▶</button>
+    <div class="text-right">
+      <p class="info">12/05<br><strong>3A • Samuel Lima</strong></p>
+    </div>
+  </div>
 </div>
 
-<section class="dobra-3">
-    <section class="titulo-dobra-3">
-        <h1>
-            ddd
-        </h1>
-    </section>
-</section>
+<div class="post">
+  <div class="post-image">
+    <img src="Hallow - Faith 1.png" alt="Imagem do post" />
+    <a href="#" class="arrow-link">
+      <img src="seta.png" alt="Seta" />
+    </a>
+  </div>
+  <div class="post-content">
+    <div class="text-left">
+      <h2 class="title">fins e recomeços</h2>
+      <p class="subtitle">a morte do papa e o drama mundial.</p>
+    </div>
+    <div class="text-right">
+      <p class="info">12/05<br><strong>3A • Samuel Lima</strong></p>
+    </div>
+  </div>
+</div>
 
 
-</body><script>
-  const container = document.getElementById('cardContainer');
-  const nextBtn = document.getElementById('nextBtn');
-  const prevBtn = document.getElementById('prevBtn');
+<style>
+.post {
+  width: 300px;
+  background-color: transparent;
+  font-family: sans-serif;
+}
 
-  nextBtn.addEventListener('click', () => {
-    container.scrollBy({ left: 320, behavior: 'smooth' }); // ajustável
-  });
+.post-image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 12px;
+}
 
-  prevBtn.addEventListener('click', () => {
-    container.scrollBy({ left: -320, behavior: 'smooth' }); // ajustável
-  });
-</script>
-    s
-</html>
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.arrow-link {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: #FFD500; /* cor de fundo do botão */
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.arrow-link img {
+  width: 16px;
+  height: 16px;
+  transform: rotate(-45deg);
+}
+
+.post-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 12px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #007BBD;
+}
+
+.subtitle {
+  margin: 4px 0 0 0;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.text-right {
+  text-align: right;
+  font-size: 0.75rem;
+  color: #333;
+}
+</style>
