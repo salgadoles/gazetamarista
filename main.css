@@ -394,4 +394,60 @@ input[type="radio"]:checked + label.card {
 
 .carousel-controls button:hover {
     background-color: #06517a;
+
+
+/* fim dobra dois >;p */}
+
+.dobra-3{
+ 
+    background-image: url('Dark_Blue_Paper_Texture_Textured_Background_Wallpaper_Image_For_Free_Download_-_Pngtree-removebg-preview\ 1.png');
+    background-position: right top
+    ;
+
+    background-repeat: no-repeat;
+
 }
+
+.titulo-dobra-3{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+ margin: 14% 2% 5% 5%;
+        text-align: center;
+        color: #fff;
+        font-size: 60px;
+}
+
+.icon-tittle-dobra-3{
+    width: 10%;
+    height: 10%;
+    margin: 0 -2% 6% -2%;
+}
+
+
+
+
+ @media (max-width: 1400px) {
+    
+.titulo-dobra-3{
+    justify-content: center;
+    align-items: center ;
+ margin: 15% 2% 5% 5%;
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+}
+
+.dobra-3{
+ 
+    background-image: url('Dark_Blue_Paper_Texture_Textured_Background_Wallpaper_Image_For_Free_Download_-_Pngtree-removebg-preview\ 1.png');
+    background-position: right top
+    ;
+  background-size: 50%;
+  height: 50vh;
+    background-repeat: no-repeat;
+
+}
+
+    
+ }
