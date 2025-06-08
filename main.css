@@ -185,8 +185,22 @@ font-size: 20px;
     .txt-dobra-1-direita h2{
 font-size: 20px;
     }
+
+/* fim dobra um >;p */
+
+
     
+    .dobra-2{
+        margin: 2% 0 2% 0 ;
+    }
     
+
+    .tittle-dobra-2{
+        margin: 5% 2% 5% 2%;
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+    }
 
 .wrapper {
     width: 100%;
@@ -200,8 +214,7 @@ font-size: 20px;
     width: 100vw;
     height: 60vh;
     display: flex;
-    flex-wrap: nowrap;
-     overflow-x: auto;  
+    flex-wrap: nowrap;  
     justify-content: start;
     scrollbar-width: none;
   -ms-overflow-style: none;
@@ -212,17 +225,17 @@ font-size: 20px;
 }
 
 .card {
+   
     flex: 0 0 auto;
     padding: 2%;
-    width: 300px;
+    width: 280px;
     border-radius: .75rem;
       background-size: cover;
     cursor: pointer;
-    overflow: hidden;
-    border-radius: 2rem;
-   
+      height: auto;
+    border-radius: 2rem;    
     display: flex;
-   align-items: self-start  ;
+   align-items: self-start;
    justify-content: right;
    text-align: right;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
@@ -230,9 +243,15 @@ font-size: 20px;
 }
 
 .card > .row {
+      overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer e Edge antigo */
     color: white;
     display: flex;
-    flex-wrap: nowrap;
+  flex-wrap: wrap; 
+  overflow-x: hidden;
+  max-width: 100vw; 
+  box-sizing: border-box;
 }
 
 
@@ -248,6 +267,10 @@ font-size: 20px;
     transition-delay: .3s;
     transition: all .3s ease;
 }
+
+.row, .row * {
+  box-sizing: border-box;
+}   
 
 .description p {
     color: #b0b0ba;
@@ -271,77 +294,84 @@ input:checked + label {
 input:checked + label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
+      overflow-y: hidden;
+}
+
+
+input[type="radio"]:checked + label.card {
+  height: auto; 
+
 }
 
 .card[for="c1"] {
     background-image: url('Group\ 125.png');
-    background-size: 80%;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: #043352;
+    background-color: 	#0096D6;
 }
 .card[for="c2"] {
  background-image: url('Group\ 125.png');
-    background-size: 80%;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: #0c5585;
+    background-color: 	#0084C4;
 }
 .card[for="c3"] {
     background-image: url('Group\ 125.png');
-    background-size: 80%;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: #1573b2;
+    background-color: 	#0072B2;
 }
 .card[for="c4"] {
    background-image: url('Group\ 125.png');
-    background-size: 80%;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: #3097dc;
+    background-color: 	#0060A0;
 }
 .card[for="c5"] {
    background-image: url('Group\ 125.png');
-    background-size: 80%;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: #0d67a3;
+    background-color:	#004E8E;
 }                     
 .card[for="c6"] {
    background-image: url('Group\ 125.png');
-    background-size: 80%;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: #1e9df3;
+    background-color: 	#003C7C;
 }
 .card[for="c7"] {
    background-image: url('Group\ 125.png');
-    background-size: 80%;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: #1a88d2;
+    background-color: #002A6A;
 }
 .card[for="c8"] {
    background-image: url('Group\ 125.png');
-    background-size: 80%;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: #115989;
+    background-color: 	#001858;
 }
 .card[for="c9"] {
    background-image: url('Group\ 125.png');
-    background-size: 80%;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: #094a76;
+    background-color:	#000646;
 }
 .card[for="c10"] {
    background-image: url('Group\ 125.png');
-    background-size: 80%;
+    background-size: 65%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: #043555;
+    background-color: 	#043352;
 }
 
 .carousel-controls {
