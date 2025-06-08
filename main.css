@@ -305,70 +305,70 @@ input[type="radio"]:checked + label.card {
 
 .card[for="c1"] {
     background-image: url('Group\ 125.png');
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color: 	#0096D6;
 }
 .card[for="c2"] {
  background-image: url('Group\ 125.png');
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color: 	#0084C4;
 }
 .card[for="c3"] {
     background-image: url('Group\ 125.png');
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color: 	#0072B2;
 }
 .card[for="c4"] {
    background-image: url('Group\ 125.png');
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color: 	#0060A0;
 }
 .card[for="c5"] {
    background-image: url('Group\ 125.png');
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color:	#004E8E;
 }                     
 .card[for="c6"] {
    background-image: url('Group\ 125.png');
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color: 	#003C7C;
 }
 .card[for="c7"] {
    background-image: url('Group\ 125.png');
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color: #002A6A;
 }
 .card[for="c8"] {
    background-image: url('Group\ 125.png');
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color: 	#001858;
 }
 .card[for="c9"] {
    background-image: url('Group\ 125.png');
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color:	#000646;
 }
 .card[for="c10"] {
    background-image: url('Group\ 125.png');
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color: 	#043352;
@@ -568,7 +568,7 @@ flex-wrap: wrap ;
     padding: 14px 40px;
     border-radius: 50px; 
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
     width: 380px;
   }
 
@@ -577,3 +577,152 @@ flex-wrap: wrap ;
   }
 
   /* fim dobra 4 >;p */
+
+  .tittle-dobra-5{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tittle-dobra-5 img{
+      width: 380px;
+    height: 180px;
+  }
+
+  .conteudo-dobra-5{
+     gap: 2%;
+    justify-content: center;
+    margin: 5% 2% 0 2%;
+display: flex;
+flex-wrap: wrap ;
+}
+
+
+/* fim dobra 5 >;p */
+
+.dobra-6{
+    margin:  0 2% 10% 2%;
+}
+
+  .dobra-7-container {
+    background-color: #d8ecf9;
+    border-radius: 12px;
+    padding: 30px;
+    font-family: sans-serif;
+    color: #003d66;
+  }
+
+  .dobra-7-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .dobra-7-texto h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 900;
+  }
+
+  .dobra-7-subtitulo {
+    color: #2d7a00;
+    margin: 10px 0;
+  }
+
+  .dobra-7-destaque {
+    font-weight: bold;
+    color: #2d7a00;
+    margin-top: 10px;
+  }
+
+  .dobra-7-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .dobra-7-logo {
+    text-align: center;
+    color: #003d66;
+    font-size: 0.85rem;
+  }
+
+  .dobra-7-logo-img {
+    width: 80px;
+    margin-bottom: 5px;
+  }
+
+  .dobra-7-outros-eps {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .dobra-7-card {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #003d66;
+  }
+
+  .dobra-7-thumb.pequena {
+    width: 80px;
+    height: 80px;
+    background-color: #003d66;
+    border-radius: 10px;
+    margin: 0 auto 8px;
+  }
+
+  .dobra-7-episodio-principal {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .dobra-7-thumb {
+    width: 120px;
+    height: 120px;
+    background-color: #003d66;
+    border-radius: 10px;
+  }
+
+  .dobra-7-info h2 {
+    color: #e02020;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .dobra-7-info p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+
+  .dobra-7-acoes {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+  }
+
+  .dobra-7-play {
+    width: 40px;
+    height: 40px;
+    background-color: #e02020;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .dobra-7-plataformas img {
+    width: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
