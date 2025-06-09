@@ -637,18 +637,15 @@ input[type="radio"]:checked+label.card {
   margin: 0;
   font-weight: 900;
 }
-
-.dobra-7-subtitulo {
+ 
+.dobra-7-texto p {
   color: #2d7a00;
-  margin: 10px 0;
+  font-family: sans-serif;
 }
 
-.dobra-7-destaque {
-  font-weight: bold;
+.dobra-7-texto b {
   color: #2d7a00;
-  margin-top: 10px;
 }
-
 .dobra-7-lateral {
   display: flex;
   flex-direction: column;
@@ -658,9 +655,13 @@ input[type="radio"]:checked+label.card {
 }
 
 .dobra-7-logo {
-  text-align: center;
+  text-align: right;
   color: #003d66;
+  width: 100%;
   font-size: 0.85rem;
+}
+.dobra-7-logo img{
+  width: 150px;
 }
 
 .dobra-7-logo-img {
@@ -688,9 +689,13 @@ input[type="radio"]:checked+label.card {
   border-radius: 10px;
   margin: 0 auto 8px;
 }
-
+.episodio-card {
+  display: flex;
+  gap: 20px;
+}
 .dobra-7-episodio-principal {
   display: flex;
+  justify-content: space-between;
   margin-top: 30px;
   gap: 30px;
   align-items: center;
@@ -727,6 +732,7 @@ input[type="radio"]:checked+label.card {
 }
 
 .dobra-7-play {
+  display: flex;
   width: 40px;
   height: 40px;
   background-color: #e02020;
