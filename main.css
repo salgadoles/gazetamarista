@@ -39,25 +39,25 @@
   background-color: #0096D6;
   padding: 7px 25px 7px 25px;
   border-radius: 20px;
-  font-size: clamp(12px, 20px, 30px);
+  font-size: clamp(14px, 18px, 28px);
   margin-left: 5%;
 }
 
 .txt-sarau2 {
   color: #fff;
-  font-size: clamp(16px, 20px, 30px);
+  font-size: clamp(14px, 18px, 28px);
 }
 
 .element-sarau {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   margin-left: -3.5vw;
   margin-bottom: 1vw;
 }
 
 .Logo-sarau {
-  width: 139px;
-  height: 57px;
+  width: 129px;
+  height: 50px;
   justify-content: right;
   margin-left: auto;
   margin-right: 5%;
@@ -73,7 +73,7 @@
 
   .txt-sarau1,
   .txt-sarau2 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .element-sarau {
@@ -550,6 +550,7 @@ input[type="radio"]:checked+label.card {
 /* fim dobra 3 >;p */
 
 .dobra-4 {
+  overflow: visible;
   margin: 5% 2% 5% 2%;
   display: flex;
   flex-direction: column;
