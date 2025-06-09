@@ -12,7 +12,7 @@
 
 <body>
   <!-- Cabeçalho de Eventos -->
-  <header class="convitestopo">
+  <header class="convitestopo" id="convitestopo">
     <h3 class="txt-sarau1">Sarau literario Marista irmão Acacío</h3>
     <hr style="height: 1px; background-color: white; border: none; width: 20vw;">
     <p class="txt-sarau2">
@@ -605,7 +605,7 @@
               <h2>DESIGN THINK</h2>
               <p>COM SAMUEL LIMA.</p>
               <div class="dobra-7-acoes">
-                <div class="dobra-7-play">&#9658;</div>
+                <div class="dobra-7-play">▶</div>
                 <div class="dobra-7-plataformas">
                   <p><strong>Assista ou Escute</strong></p>
                   <img src="ELEMENTOS GRAFICOS/icon-youtube.png" alt="YouTube" />
@@ -633,7 +633,14 @@
           <h1>VOLTAR PRA CIMA</h1>
         </div>
         <div class="dobra-8-icon">
-          icon aqui
+       <a href="#convitestopo">
+  <button class="voltar-dobra-8">
+    <img class="seta-voltar-dobra-8" src="ELEMENTOS GRAFICOS/Group 115.png" alt="">
+  </button>
+</a>
+
+          </button> 
+        
         </div>
       </div>
     </section>
@@ -667,6 +674,7 @@
       container.scrollBy({ left: -320, behavior: 'smooth' });
     });
   </script>
+
 
 
 </body>

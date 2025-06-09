@@ -16,6 +16,7 @@
 
 /* Personalizações gerais */
 * {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   margin: 0;
   font-family: 'Baloo2', sans-serif;
@@ -671,6 +672,7 @@ input[type="radio"]:checked+label.card {
 }
 
 .dobra-7-outros-eps {
+  overflow: visible;
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -822,4 +824,23 @@ footer {
   flex-direction: column;
   padding: 20px;
 
+}
+
+
+.voltar-dobra-8{
+  margin: 2vw 2vh 2vw 2vh;
+  border: none;
+  background-color: #FFC20E ;
+  color: #0084C4;
+  width: 80px;
+  height: 80px;
+border-radius: 100%;
+
+
+}
+
+.seta-voltar-dobra-8{
+  justify-content: center;
+ width: 40px;
+  height: 40px;
 }
