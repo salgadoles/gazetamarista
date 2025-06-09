@@ -1,3 +1,18 @@
+ const container = document.getElementById('cardContainer');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+
+    nextBtn.addEventListener('click', () => {
+      container.scrollBy({ left: 320, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      container.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+
+
+
+
 (function() {
     var script = document.createElement("script");
     script.src = "https://unpkg.com/scrollreveal";
@@ -11,14 +26,13 @@
 function iniciarScrollReveal() {
     if (typeof ScrollReveal !== "undefined") {
         const sr = ScrollReveal({
-            reset: true, // Reinicia a animação ao sair/voltar do elemento
-            distance: '40px', // Distância do movimento
-            duration: 1200, // Duração da animação
-            delay: 200, // Delay entre elementos
+            reset: true, 
+            distance: '40px', 
+            duration: 1200,
+            delay: 200, 
         });
 
-        // Configurações específicas por seção (após o banner):
-        
+       
         // Seção RÁDIO/JORNAL (dobra-1)
         sr.reveal('.logo-conexao', { origin: 'top' });
         sr.reveal('.tittle-dobra-1-esquerda', { origin: 'left' });
@@ -26,12 +40,9 @@ function iniciarScrollReveal() {
         sr.reveal('.txt-dobra-1-esquerda', { origin: 'left', delay: 200 });
         sr.reveal('.txt-dobra-1-direita', { origin: 'right', delay: 200 });
 
-        // Seção QUEM SOMOS? (dobra-2)
-        // Anima os cards um por um
-
         // Seção ULTIMAS NOTICIAS (dobra-3)
         sr.reveal('.titulo-dobra-3', { origin: 'top' });
-        sr.reveal('.post', { interval: 100 }); // Anima posts sequencialmente
+        sr.reveal('.post', { interval: 100 });
 
         // Seção QUIZ (dobra-4)
         sr.reveal('.tittle-dobra-4', { origin: 'top' });
