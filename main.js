@@ -1,23 +1,23 @@
- const container = document.getElementById('cardContainer');
-    const nextBtn = document.getElementById('nextBtn');
-    const prevBtn = document.getElementById('prevBtn');
+const container = document.getElementById('cardContainer');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
 
-    nextBtn.addEventListener('click', () => {
-      container.scrollBy({ left: 320, behavior: 'smooth' });
-    });
+nextBtn.addEventListener('click', () => {
+    container.scrollBy({ left: 320, behavior: 'smooth' });
+});
 
-    prevBtn.addEventListener('click', () => {
-      container.scrollBy({ left: -320, behavior: 'smooth' });
-    });
-
-
+prevBtn.addEventListener('click', () => {
+    container.scrollBy({ left: -320, behavior: 'smooth' });
+});
 
 
-(function() {
+
+
+(function () {
     var script = document.createElement("script");
     script.src = "https://unpkg.com/scrollreveal";
     script.async = true;
-    script.onload = function() {
+    script.onload = function () {
         iniciarScrollReveal();
     };
     document.head.appendChild(script);
@@ -26,13 +26,13 @@
 function iniciarScrollReveal() {
     if (typeof ScrollReveal !== "undefined") {
         const sr = ScrollReveal({
-            reset: true, 
-            distance: '40px', 
+            reset: true,
+            distance: '40px',
             duration: 1200,
-            delay: 200, 
+            delay: 200,
         });
 
-       
+
         // Seção RÁDIO/JORNAL (dobra-1)
         sr.reveal('.logo-conexao', { origin: 'top' });
         sr.reveal('.tittle-dobra-1-esquerda', { origin: 'left' });
@@ -51,8 +51,8 @@ function iniciarScrollReveal() {
         // Seção PODCAST (dobra-6)
         sr.reveal('.dobra-7-texto', { origin: 'left' });
         sr.reveal('.dobra-7-logo', { origin: 'right' });
-      
-        
+
+
 
         // Botão "Voltar pra cima" (dobra-8)
         sr.reveal('.dobra-8-text', { origin: 'left' });
